@@ -1,5 +1,5 @@
 import sys
-import random
+import random 
 
 # Check usage
 if len(sys.argv) > 2:
@@ -57,3 +57,4 @@ for i in range (int(pass_length)):
 password = ''.join(pass_list)
 
 print(password)
+
