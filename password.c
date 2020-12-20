@@ -1,3 +1,5 @@
+// Generate random passwords
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -5,32 +7,30 @@
 
 int main(int argc, char *argv[]) {
 
-    // Check usage
+    // Ensure proper usage
     if (argc > 2) {
         printf("Usage: You must provide only one argument\n");
         return 1;
-    }
-    else if (argc < 2) {
+    } else if (argc < 2) {
         printf("Usage: You must provide an argument\n");
         return 1;
     }
 
-    char *c = argv[1];
+    char *argument = argv[1];
 
-    // Check if argument is a digit
-    if (!isdigit(*c)) {
+    // Ensure argument is a digit
+    if (!isdigit(*argument)) {
         printf("Usage: The argument must be a number\n");
         return 1;
     }
 
-    int pass_length = atoi(c);
+    int pass_length = atoi(argument);
 
-    // A few more checks
+    // A few more usage checks
     if (pass_length < 4) {
         printf("Usage: The minimum length has to be 4\n");
         return 1;
-    }
-    else if (pass_length >90) {
+    } else if (pass_length >90) {
         printf("Usage: The maximum length has to be 90\n");
         return 1;
     }
