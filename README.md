@@ -2,7 +2,7 @@
 
 ## Description
 
-pass-gen-cli is a command-line program to generate random passwords. It was designed to include one capitalized letter, one special character and some lower case letters 
+**pass-gen-cli** is a command-line program to generate random passwords. It was designed to include one capitalized letter, one special character and lower case letters.
 
 ## Motivation
 
@@ -12,11 +12,11 @@ Of course there are lots of passwords generators out there but I wanted to write
 
 ## Usage
 
-To use this program is quite simple. It takes one argument, which is a number, to declare the length of the password you want.
+To use this program is quite simple. It takes one argument (which is a number) to tell the program the length of the password you want. A new password is generated and shown as an output.
 
-## Example
+### Example
 
-```shell
+```
 # This generates a 20 characters passwords
 $ ./password 20
 U$0ptkjmixepvjxujodu
