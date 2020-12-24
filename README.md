@@ -16,8 +16,8 @@ To use this program is quite simple. It takes one argument, which is a number, t
 
 ## Example
 
-```shell
-#This generates a 20 characters passwords
+```python
+# This generates a 20 characters passwords
 $ ./password 20
 U$0ptkjmixepvjxujodu
 ```
