@@ -1,5 +1,7 @@
 # pass-gen-cli
 
+![LICENSE](https://img.shields.io/badge/License-MIT-green.svg)
+
 **pass-gen-cli** is a command-line program to generate random passwords. It was designed to include one capitalized letter, one special character and lower case letters.
 
 ## Motivation
@@ -33,7 +35,7 @@ Fell free to [open issues, bugs, feature requests](https://github.com/gcmaciel/p
 
 #### Prerequisites
 
-Ensure your have a compiler installed (like `gcc` or `clang`).
+If you want to contribute, ensure your have a compiler installed (like `gcc` or `clang`).
 
 ## License
 
