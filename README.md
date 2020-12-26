@@ -6,8 +6,6 @@
 
 I decided to make this program because I always took too long to create passwords from my head.
 
-Of course there are lots of passwords generators out there but I wanted to write one myself :slightly_smiling_face:.
-
 ## Usage
 
 To use this program is quite simple. It takes one argument (which is a number) to tell the program the length of the password you want. A new password is generated and shown as an output.
