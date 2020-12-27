@@ -71,8 +71,8 @@ int main(int argc, char *argv[]) {
     }
 
     // Print generated password
-    for (int j = 0; j < pass_length; j++) {
-        printf("%c", pass_arr[j]);
+    for (int i = 0; i < pass_length; i++) {
+        printf("%c", pass_arr[i]);
     }
     printf("\n");
     return 0;
