@@ -5,6 +5,10 @@
 #include <ctype.h>
 #include <time.h>
 
+#define ALPHABET_LENGTH 26
+#define NUMBERS_LENGTH 10
+#define SPECIAL_CHARS_LENGTH 7
+
 int main(int argc, char *argv[]) {
 
     // Ensure proper usage
@@ -35,27 +39,27 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    char alphabet[26] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
-    char numbers[10] = {'0','1','2','3','4','5','6','7','8','9'};
-    char special_characters[7] = {'!','@','#','$','%','&','*'};
+    const char alphabet[ALPHABET_LENGTH] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+    const char numbers[NUMBERS_LENGTH] = {'0','1','2','3','4','5','6','7','8','9'};
+    const char special_characters[SPECIAL_CHARS_LENGTH] = {'!','@','#','$','%','&','*'};
 
     char pass_arr[pass_length];
 
     srand(time(0));
 
     // Get a random letter from alphabet, convert to uppercase and insert in pass_arr
-    int random_1 = rand() % 26;
+    int random_1 = rand() % ALPHABET_LENGTH;
     char letter = alphabet[random_1];
     char upper_letter = toupper(letter);
     pass_arr[0] = upper_letter;
 
     // Get a random special character and insert in pass_arr
-    int random_2 = rand() % 7;
+    int random_2 = rand() % SPECIAL_CHARS_LENGTH;
     char special = special_characters[random_2];
     pass_arr[1] = special;
 
     // Get a random number and insert in pass_arr
-    int random_3 = rand() % 10;
+    int random_3 = rand() % NUMBERS_LENGTH;
     char number = numbers[random_3];
     pass_arr[2] = number;
 
