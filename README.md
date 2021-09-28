@@ -25,14 +25,6 @@ U$0ptkjmixepvjxujodu
 $ git clone https://github.com/gcmaciel/pass-gen-cli.git
 ```
 
-## Contributing
-
-Fell free to [open issues, bugs, feature requests](https://github.com/gcmaciel/pass-gen-cli/issues) or [contribute to code](https://github.com/gcmaciel/pass-gen-cli/pulls).
-
-#### Prerequisites
-
-If you want to contribute, ensure your have a compiler installed (like `gcc` or `clang`).
-
 ## License
 
 This project is open source and available under the [MIT license](LICENSE).
